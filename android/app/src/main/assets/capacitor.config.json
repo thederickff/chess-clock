@@ -1,0 +1,6 @@
+{
+	"appId": "com.github.derickfelix.chessclock",
+	"appName": "Chess Clock",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

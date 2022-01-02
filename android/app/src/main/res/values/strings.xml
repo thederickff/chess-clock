@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Chess Clock</string>
+    <string name="title_activity_main">Chess Clock</string>
+    <string name="package_name">com.github.derickfelix.chessclock</string>
+    <string name="custom_url_scheme">com.github.derickfelix.chessclock</string>
+</resources>

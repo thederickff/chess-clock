@@ -1,0 +1,43 @@
+ion-content {
+  --background: black;
+  height: 100%;
+
+  .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    ion-button {
+      height: 100%;
+      font-size: 48px;
+      margin: 0;
+
+      &.switcher {
+
+        &:first-of-type {
+          transform: rotate(180deg);
+        }
+
+        &.active {
+          --background: red;
+        }
+      }
+    }
+
+    .options {
+      margin: 1em 0;
+      display: flex;
+      justify-content: center;
+
+      ion-button {
+        font-size: 24px;
+        padding: 0.5em;
+        color: white;
+
+        ion-icon {
+          margin: 0.25em;
+        }
+      }
+    }
+  }
+}

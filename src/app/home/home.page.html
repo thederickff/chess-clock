@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-button class="switcher" expand="full" [color]="clock1.loser ? 'danger' : turn === 'one' ? 'primary' : 'medium'" [disabled]="turn === 'two' || gameOver" (click)="handleOne()">
+      {{ clock1.value }}
+    </ion-button>
+    <div class="options">
+      <ion-button fill="clear" (click)="displaySettings()">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="pauseGame()" [disabled]="turn === 'none' || gameOver">
+        <ion-icon name="pause-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="restartGame()">
+        <ion-icon name="refresh-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <ion-button class="switcher" expand="full" [color]="clock2.loser ? 'danger' : turn === 'two' ? 'primary' : 'medium'" [disabled]="turn === 'one' || gameOver" (click)="handleTwo()">
+      {{ clock2.value }}
+    </ion-button>
+  </div>
+</ion-content>
